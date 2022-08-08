@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify.login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 540px)" href="phone.css">
+</head>
+<body>
+    <nav id="navbar">
+            <img src="logo2.jpeg" alt="Spotify" height="50" width="50">
+        <h1>Spotify<sup>&reg;</sup></h1>
+        <div class="nav-menu">
+        <a href="#" class="nav-link">Premium</a>
+        <a href="#" class="nav-link">Support</a>
+        <a href="#" class="nav-link">Download</a>
+    </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <home class="container">
+        <div class="photo">
+            <img src="Image_01.png" alt="Photo" width="230" height="450">
+        </div>
+        <div class="lines">
+            <h3>Your music.</h3>
+            <h3>Your podcasts.</h3>
+            <h3>Your Home.</h3>
+        </div>
+        <button id="btn1">Sign up</button>
+        <div class="form">
+            <div id="one">
+            <h5>What should we call you?</h5>
+            <input type="text" placeholder=" Enter a profile name" id="box">
+            </div>
+            <div id="two">
+                <h5>Email address</h5>
+                <input type="email" placeholder=" Enter your email address" id="box">
+            </div>
+            <div id="three">
+                <h5>Create password</h5>
+                <input type="password" placeholder=" Create a password" id="box">
+            </div>
+            <div id="four">
+                <p>By clicking on sign-up, you agree to Spotify's <a href="#">Terms and Conditions of Use.</a></p>
+            </div>
+            <div id="five">
+                <p>To learn more about how Spotify collects, uses, shares and protects your personal data, please see <a href="#" >Spotify's
+                    Privacy Policy</a></p>
+            </div>
+            <button id="btn">Sign up</button>
+            <div id="six">
+                <p>Have an account?<a href="#">Log in.</a></p>
+            </div>
+        </div>
+    </home>
+    <footer class="container1">
+        <div id="logo">
+            <img src="logo2.jpeg" alt="Spotify" height="50" width="50">
+            <h1>Spotify<sup>&reg;</sup></h1> 
+        </div>
+        <div class="section1">
+            <h4>COMPANY</h4>
+            <a href="#" id="para">About</a><br>
+            <a href="#" id="para">Jobs</a><br>
+            <a href="#" id="para">For the records</a>
+        </div>
+        <div class="section2">
+            <h4>USEFUL LINKS</h4>
+            <a href="#" id="para">Support</a><br>
+            <a href="#" id="para">Web player</a><br>
+            <a href="#" id="para">Free mobile app</a>
+        </div>
+    </footer>
+    <script>
+        const hamburger= document.querySelector(".hamburger");
+        const navmenu= document.querySelector(".nav-menu");
+        
+        hamburger.addEventListener("click",()=>{
+            hamburger.classList.toggle("active");
+            navmenu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n=> n.addEventListener("click",()=>{
+            hamburger.classList.remove("active");
+            navmenu.classList.remove("active");
+        }))
+    </script>
+</body>
+</html>

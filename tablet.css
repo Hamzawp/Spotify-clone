@@ -1,0 +1,69 @@
+.navtabs{
+    width: 754px;
+    
+}
+#navbar h1{
+   margin-right: 70%;
+}
+#navbar{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.block{
+    width: 754px;
+    margin-left: 60px;
+    height:500px ;
+}
+.container{
+   display: block; 
+   justify-content: center;
+   align-items: center;
+}
+.form{
+    margin-left: 25%; 
+    margin-bottom: 5px;
+    margin-top: 42%;
+}
+.logo{
+    padding-left: 6%;
+    padding-right: 11%;
+}
+.logo img{
+    width: 45px;
+    height: 45px;
+}
+.logo h1{
+    font-size:  2rem;
+}
+.section1{
+    margin-right: 15%;
+    margin-left: -24%;
+}
+.section2{
+    margin-left: -16%;
+}
+.section-1 h4{
+    margin-top: 8px;
+}
+.section2 h4{
+   margin-top: 2px;
+    padding-left: 100px;
+    padding-bottom: 20%;
+}
+.section2 a{
+    padding-left: 100px ;
+}
+.photo{
+    margin-left: 10%;
+    padding-right: 12%;
+}
+.lines{
+    padding-top: 0%;
+    margin-top: -350px;
+    padding-left: 60%;
+    padding-right: 0%;
+}
+#box{
+    width: 90%;
+    height: 2rem;
+}
