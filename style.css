@@ -92,6 +92,9 @@ html,body
 {
     width: 100%;
 }
+sup{
+    color: #504f4f;
+}
 .container{
     display: flex;
     justify-content: center;
